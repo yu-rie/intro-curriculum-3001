@@ -7,8 +7,17 @@
  */
 function factorial(n) {
     let result = 1;
-    // TODO このコメントを消して正しく実装してください。
-    return result;
+
+    for (let i = 1; i <= n; i++) {  // 変数 i が 1 から引数の数になるまで繰り返すよ。
+
+        result = result * i;        /* result に変数 i　を掛け合わせたものを result に代入。　
+                                     " result *= i " とか書けるみたいだけど分かり難いや。 */
+
+//   console.log(result);             // 心配なので途中経過を表示してみる。 なんか， assert のテストが 2回ずつ行われてるっぽい。
+
+   }                               // for 文ここまで。 1 行ならカッコ要らなかったかも？
+
+    return result;                  // factorial を呼んだトコヘ result の値を返す。
 }
 
 const assert = require('assert');
